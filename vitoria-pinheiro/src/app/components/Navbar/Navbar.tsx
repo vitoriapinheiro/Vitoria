@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import NavLink from "./Link/NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./Menu/MenuOverlay";
+import Image from "next/image";
+
 
 const navLinks = [
   {
@@ -30,7 +32,12 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          <Image
+          src="/assets/VP.png"
+          width={130}
+          height={130}
+          alt="VP"
+      />
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

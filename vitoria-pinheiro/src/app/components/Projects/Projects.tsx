@@ -7,55 +7,91 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    title: "Needle",
+    description: "Unravel your tasks",
+    image: "/projects/needle.png",
+    tag: ["All", "MacOS"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    title: "Expresso",
+    description: "Improve your productivity",
+    image: "/projects/expresso.png",
+    tag: ["All", "MacOS"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
+    title: "T-Numbers",
+    description: "Help kids with vision problems to learn the numbers",
+    image: "/projects/t-numbers.png",
+    tag: ["All", "iOS", "MacOS"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    title: "Hellcife",
+    description: "Save mofia of the circles of the Hell",
+    image: "/projects/Hellcife.png",
+    tag: ["All", "iOS"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    title: "Ecopiticos",
+    description: "help the environment",
+    image: "/projects/ecopitico.png",
+    tag: ["All", "iOS"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    title: "Ticket",
+    description: "What's the next movie you are gonna watch?",
+    image: "/projects/Ticket.png",
+    tag: ["All", "iOS"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 7,
+    title: "Sommelier",
+    description: "What's your next drink?",
+    image: "/projects/sommelier.png",
+    tag: ["All", "iOS"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 8,
+    title: "Tick Tack Old",
+    description: "Out of paper? Bored? No problem. All you need to play this game is on you wrist.",
+    image: "/projects/tictacold.jpeg",
+    tag: ["All", "WatchOs"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 9,
+    title: "Skin Scanner",
+    description: "Too much sun? Check if your skin is ok. ",
+    image: "/projects/sun.png",
+    tag: ["All", "iOS"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 10,
+    title: "Universe",
+    description: "Learn more about the universe",
+    image: "/projects/universe.png",
+    tag: ["All", "iOS"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -92,13 +128,18 @@ const Projects = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="MacOS"
+          isSelected={tag === "MacOS"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="iOS"
+          isSelected={tag === "iOS"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="WatchOS"
+          isSelected={tag === "WatchOS"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

@@ -9,13 +9,10 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
         <li>Swift</li>
         <li>C++</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>React native</li>
+        <li>Python</li>
+        <li>TypeScript</li>
       </ul>
     ),
   },
@@ -34,7 +31,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
+        <li>App Development With Swift - Certified User</li>
         <li>Google Professional Cloud Developer</li>
       </ul>
     ),
@@ -54,17 +51,16 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/assets/about-image.png" width={500} height={500} alt="computer with coffee"/>
+        <Image
+          src="/assets/app-development.png"
+          width={500} height={500} 
+          alt="computer with coffee"
+          className="border-radius-16px shadow-2xl"
+          />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
-          </p>
+          I am a dedicated mobile and FrontEnd developer passionate about creating interactive and helpful applications. With expertise in JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS, and Git, I bring valuable experience to projects. Always eager to expand my knowledge, I am a quick learner and a collaborative team player excited to work with others on exceptional applications. In the realm of iOS development, I am well-versed in XCode, Swift, UIKit, SwiftUI, and Combine, utilizing Storyboard and ViewCode.           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
